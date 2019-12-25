@@ -1,0 +1,155 @@
+.no-decoration {
+  text-decoration: none;
+  color: #000000;
+}
+
+.no-decoration:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.row {
+  margin: 0;
+}
+.pad-navlinks {
+  padding-right: 20px;
+}
+
+.proverb {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 1em;
+}
+
+.tag-line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.gallery-outer {
+  padding: 10px;
+}
+
+.gallery-outer .gallery-inner {
+  padding: 10px;
+  background: #f8f9fa;
+}
+
+.social-outer {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.social {
+  padding: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.padding-from-margin {
+  margin-top: 40px;
+}
+
+.story {
+  padding: 30px 100px;
+}
+
+.cover-image {
+  height: 300px;
+}
+
+.collage {
+  height: 300px;
+  cursor: zoom-in;
+}
+
+.story-cover {
+  height: 5em;
+  color: #c7c7c7;
+  background-color: #494949;
+  font-size: 3em;
+  font-family: 'Cinzel Decorative', cursive;
+  padding: 1em;
+}
+
+.story-cover:hover {
+  background-color: #c7c7c7;
+  color: #494949;
+}
+
+.story-cover-text {
+  text-align: center;
+  margin: auto;
+  width: 70%;
+}
+
+.story-title {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.story-date {
+  text-align: right;
+  padding: 20px;
+  font-size: 1em;
+  color: silver;
+}
+
+.story-text {
+  text-align: center;
+  font-style: italic;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5em;
+  color: gray;
+}
+
+.story-large {
+}
+
+.story-large img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+.story-small {
+  min-height: 100%;
+}
+
+.story-small img {
+  /* max-width:100%; */
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: none;
+  }
+}
+
+.modal-dialog {
+  width: 90%;
+  height: 70%;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.modal-content {
+  height: 99%;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
+  .modal-slider {
+    margin-top: 20% !important;
+    height: 60% !important;
+  }
+
+  .story-large-row {
+    padding-top: 20%;
+  }
+}

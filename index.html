@@ -1,0 +1,49 @@
+<html>
+  <head>
+
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+          
+      <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>      
+      <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <link rel="stylesheet" type="text/css" htef="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+      <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+      <link rel="stylesheet" type="text/css" href="./css/style.css"></link>
+
+    <script>
+    $(document).ready(function(){
+      $('.jv-slide').slick({
+        dots: false,
+        prevArrow: false,
+        nextArrow: false,
+        infinite: true,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 3500,
+        speed: 3000,
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <div style="position: absolute; left: 0; top: 0; width: 100vw; height: 100vh; background: white">
+<div class="jv-slide">
+        <img class="landing-page"  src="assets/cover-1.jpg" />
+        <img class="landing-page"  src="assets/cover-2.jpg" />
+    </div>
+    <img class="jv-logo" src="./assets/jv-logo-inverted.png"/>
+
+    
+    <div class="welcome-button">
+        <div><a href="/home" style="text-decoration: none; color: #FFFFFF;">Welcome</a></div>
+      </div>
+        
+    </div>
+    
+     
+
+  </body>
+</html>

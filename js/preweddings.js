@@ -47,7 +47,7 @@ function changeModalContent(value) {
   for (let i = 0; i < data.find(portfolio => portfolio.id === value).count; i++) {
     htmldata += `
       <div class="story-large text-center mx-auto">
-        <img class="mx-auto image" src="./assets/pre-wed/${value}/${i + 1}.JPG" />
+        <img class="mx-auto image" data-lazy="./assets/pre-wed/${value}/${i + 1}.JPG" />
       </div>
     `;
     htmlSmallData += `
@@ -60,6 +60,7 @@ function changeModalContent(value) {
   $('#modal-small-contents').html(htmlSmallData);
 
   $('.slider-for').slick({
+    lazyLoad: 'ondemand',
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,

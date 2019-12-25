@@ -143,7 +143,7 @@
   height: 99%;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .modal-slider {
     margin-top: 20% !important;
     height: 60% !important;

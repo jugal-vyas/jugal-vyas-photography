@@ -2,21 +2,21 @@ const data = [
   {
     id: 'vishal-komal',
     name: 'Vishal&nbsp;&nbsp;&amp;&nbsp;&nbsp;Komal',
-    statement: 'Some one liner text which describes the couple and the experience the photographer had in carrying out the photo shoot..',
+    statement: '',
     date: 'February, 2020',
     count: 20,
   },
   {
     id: 'naitik-viddhi',
     name: 'Naitik&nbsp;&nbsp;&amp;&nbsp;&nbsp;Viddhi',
-    statement: 'Some one liner text which describes the couple and the experience the photographer had in carrying out the photo shoot..',
+    statement: '',
     date: 'April, 2019',
     count: 10,
   },
   {
     id: 'jasmi-meet',
     name: 'Jasmi&nbsp;&nbsp;&amp;&nbsp;&nbsp;Meet',
-    statement: 'Some one liner text which describes the couple and the experience the photographer had in carrying out the photo shoot..',
+    statement: '',
     date: 'March, 2019',
     count: 7,
   },
@@ -85,8 +85,8 @@ function renderPortfolio() {
                 ${data[i].name}
               </div>
             </div>
-            <div class="col-10 story-title"></div>
-            <div class="col-2 story-date">
+            <div class="col-9 story-title"></div>
+            <div class="col-3 story-date">
               ${data[i].date}
             </div>
             <div class="col-12 story-text">

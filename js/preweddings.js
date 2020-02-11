@@ -1,31 +1,24 @@
-// $('#collage-1').click(function () {
-//   $('#storyInModal').modal('show');
-// });
-// $('#collage-2').click(function () {
-//   $('#storyInModal').modal('show');
-// });
-
 const data = [
   {
-    id: 'jasmi-meet',
-    name: 'Jasmi&nbsp;&nbsp;&amp;&nbsp;&nbsp;Meet',
+    id: 'vishal-komal',
+    name: 'Vishal&nbsp;&nbsp;&amp;&nbsp;&nbsp;Komal',
     statement: 'Some one liner text which describes the couple and the experience the photographer had in carrying out the photo shoot..',
-    date: 'March 1, 2019',
-    count: 6,
+    date: 'February, 2020',
+    count: 20,
   },
   {
     id: 'naitik-viddhi',
     name: 'Naitik&nbsp;&nbsp;&amp;&nbsp;&nbsp;Viddhi',
     statement: 'Some one liner text which describes the couple and the experience the photographer had in carrying out the photo shoot..',
-    date: 'March 30, 2019',
+    date: 'April, 2019',
     count: 10,
   },
   {
-    id: 'prachi-jimit',
-    name: 'Prachi&nbsp;&nbsp;&amp;&nbsp;&nbsp;&nbsp;Jimit',
+    id: 'jasmi-meet',
+    name: 'Jasmi&nbsp;&nbsp;&amp;&nbsp;&nbsp;Meet',
     statement: 'Some one liner text which describes the couple and the experience the photographer had in carrying out the photo shoot..',
-    date: 'May 30, 2019',
-    count: 10,
+    date: 'March, 2019',
+    count: 7,
   },
 ];
 
@@ -47,7 +40,7 @@ function changeModalContent(value) {
   for (let i = 0; i < data.find(portfolio => portfolio.id === value).count; i++) {
     htmldata += `
       <div class="story-large text-center mx-auto">
-        <img class="mx-auto image" data-lazy="./assets/pre-wed/${value}/${i + 1}.JPG" />
+        <img class="mx-auto image" src="./assets/pre-wed/${value}/${i + 1}.JPG" />
       </div>
     `;
     htmlSmallData += `
@@ -60,7 +53,6 @@ function changeModalContent(value) {
   $('#modal-small-contents').html(htmlSmallData);
 
   $('.slider-for').slick({
-    lazyLoad: 'ondemand',
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -81,8 +73,6 @@ function changeModalContent(value) {
 }
 
 function renderPortfolio() {
-
-
   let htmlData = '';
 
   for (let i=0; i<data.length; i++) {

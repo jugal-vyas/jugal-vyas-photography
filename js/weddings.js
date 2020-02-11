@@ -1,38 +1,31 @@
 const data = [
   {
-    id: 'jasmi-meet',
-    name: 'Jasmi&nbsp;&nbsp;&amp;&nbsp;&nbsp;Meet',
+    id: 'kinjal-tarun',
+    name: 'Kinjal&nbsp;&nbsp;&amp;&nbsp;&nbsp;&nbsp;Tarun',
     statement: 'Some one liner text which describes the couple and the experience the photographer had in carrying out the photo shoot..',
-    date: 'March 1, 2019',
-    count: 6,
-  },
-  {
-    id: 'nilesh-bhavisha',
-    name: 'Nilesh&nbsp;&nbsp;&amp;&nbsp;&nbsp;Bhavisha',
-    statement: 'Some one liner text which describes the couple and the experience the photographer had in carrying out the photo shoot..',
-    date: 'March 30, 2019',
-    count: 5,
-  },
-  {
-    id: 'ritesh-darshini',
-    name: 'Ritesh&nbsp;&nbsp;&amp;&nbsp;&nbsp;&nbsp;Darshini',
-    statement: 'Some one liner text which describes the couple and the experience the photographer had in carrying out the photo shoot..',
-    date: 'May 30, 2019',
-    count: 5,
+    date: 'Decemeber, 2019',
+    count: 15,
   },
   {
     id: 'ritesh-pooja',
     name: 'Ritesh&nbsp;&nbsp;&amp;&nbsp;&nbsp;&nbsp;Pooja',
     statement: 'Some one liner text which describes the couple and the experience the photographer had in carrying out the photo shoot..',
-    date: 'May 30, 2019',
+    date: 'November, 2019',
+    count: 18,
+  },
+  {
+    id: 'ritesh-darshini',
+    name: 'Ritesh&nbsp;&nbsp;&amp;&nbsp;&nbsp;&nbsp;Darshini',
+    statement: 'Some one liner text which describes the couple and the experience the photographer had in carrying out the photo shoot..',
+    date: 'June, 2019',
     count: 5,
   },
   {
-    id: 'kinjal-tarun',
-    name: 'Kinjal&nbsp;&nbsp;&amp;&nbsp;&nbsp;&nbsp;Tarun',
+    id: 'jasmi-meet',
+    name: 'Jasmi&nbsp;&nbsp;&amp;&nbsp;&nbsp;Meet',
     statement: 'Some one liner text which describes the couple and the experience the photographer had in carrying out the photo shoot..',
-    date: 'May 30, 2019',
-    count: 6,
+    date: 'March, 2019',
+    count: 11,
   },
 ];
 
@@ -87,8 +80,6 @@ function changeModalContent(value) {
 }
 
 function renderPortfolio() {
-
-
   let htmlData = '';
 
   for (let i=0; i<data.length; i++) {

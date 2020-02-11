@@ -108,6 +108,7 @@
 }
 
 .story-large {
+  padding-top: 200px;
 }
 
 .story-large img {
@@ -151,5 +152,15 @@
 
   .story-large-row {
     padding-top: 20%;
+  }
+
+  .story-large {
+    padding-top: 200px;
+  }
+}
+
+@media (min-width: 800px) {
+  .story-large {
+    padding-top: 0px;
   }
 }

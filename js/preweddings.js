@@ -79,7 +79,7 @@ function renderPortfolio() {
     htmlData += `
       <div class="card">
         <div class="card-header" id="heading${i}">
-          <div class="row story" style="background-image: url('assets/pre-wed/${data[i].id}/cover.jpg'); background-repeat: no-repeat; background-position: center;">
+          <div class="row story" style="background-image: url('assets/pre-wed/${data[i].id}/cover.jpg'); background-blend-mode: saturation; background-size: cover; ">
             <div class="story-cover col-12">
               <div class="story-cover-text">
                 ${data[i].name}

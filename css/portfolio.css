@@ -69,20 +69,37 @@
   height: 5em;
   color: #c7c7c7;
   /* background-color: #494949; */
-  font-size: 3em;
+  /* font-size: 3em; */
   font-family: 'Cinzel Decorative', cursive;
   padding: 1em;
 }
 
-.story-cover:hover {
-  /* background-color: #c7c7c7; */
-  color: #494949;
+@media (min-width: 1024px) {
+  .story-cover {
+    font-size: 3em;
+  }
 }
 
 .story-cover-text {
   text-align: center;
   margin: auto;
   width: 70%;
+}
+
+.story-cover-text-white {
+  color: #c7c7c7;
+}
+
+.story-cover-text-white:hover {
+  color: #494949;
+}
+
+.story-cover-text-black {
+  color: #494949;
+}
+
+.story-cover-text-black:hover {
+  color: #c7c7c7;
 }
 
 .story-title {

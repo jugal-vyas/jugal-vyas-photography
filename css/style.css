@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Upright&display=swap');
+
 body {
   margin: 0px;
   padding: 0px;
+  font-family: 'Cormorant Upright', serif;
 }
 .landing-page {
   width: 100%;
@@ -30,7 +33,11 @@ body {
   font-size: 2em;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 1080px) {
+  body {
+    font-size: 2em;
+  }
+
   .welcome-button  {
     font-size: 3em;
     width: 5em;
@@ -40,5 +47,13 @@ body {
 
   .jv-logo {
     top: 10%;
+  }
+
+  .navbar-brand {
+    font-size: 1em;
+  }
+
+  .navbar-toggler {
+    font-size: 2em;
   }
 }

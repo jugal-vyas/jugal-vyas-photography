@@ -5,6 +5,7 @@ const data = [
     statement: '',
     date: 'February, 2020',
     count: 20,
+    coverText: 'story-cover-text-white'
   },
   {
     id: 'naitik-viddhi',
@@ -12,6 +13,7 @@ const data = [
     statement: '',
     date: 'April, 2019',
     count: 10,
+    coverText: 'story-cover-text-white'
   },
   {
     id: 'jasmi-meet',
@@ -19,6 +21,7 @@ const data = [
     statement: '',
     date: 'March, 2019',
     count: 7,
+    coverText: 'story-cover-text-black'
   },
 ];
 
@@ -81,7 +84,7 @@ function renderPortfolio() {
         <div class="card-header" id="heading${i}">
           <div class="row story" style="background-image: url('assets/pre-wed/${data[i].id}/cover.jpg'); background-blend-mode: saturation; background-size: cover; ">
             <div class="story-cover col-12">
-              <div class="story-cover-text">
+              <div class="story-cover-text ${data[i].coverText}">
                 ${data[i].name}
               </div>
             </div>

@@ -83,7 +83,7 @@ function renderPortfolio() {
       <div class="card" style="position: relative; border: 1px black solid;>
         <div class="card-header" style="padding: 0" id="heading${i}">
           <div style="position:absolute; top: 0; width: 100%; height: 100%; z-index: 1; ">
-            <img style="width: 100%; height: 100%; filter: blur(6px);" src="assets/pre-wed/${data[i].id}/cover.jpg" />
+            <img style="width: 100%; height: 100%; filter: blur(3px);" src="assets/pre-wed/${data[i].id}/cover.jpg" />
           </div>
           <div class="row story" style="position: relative; z-index: 2">
             <div class="story-cover col-12">

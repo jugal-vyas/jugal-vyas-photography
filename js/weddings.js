@@ -5,7 +5,7 @@ const data = [
     statement: '',
     date: 'Decemeber, 2019',
     count: 15,
-    coverText: 'story-cover-text-black'
+    coverText: 'story-cover-text-white'
   },
   {
     id: 'ritesh-pooja',
@@ -29,7 +29,7 @@ const data = [
     statement: '',
     date: 'March, 2019',
     count: 11,
-    coverText: 'story-cover-text-black'
+    coverText: 'story-cover-text-white'
   },
 ];
 
@@ -88,23 +88,26 @@ function renderPortfolio() {
 
   for (let i=0; i<data.length; i++) {
     htmlData += `
-      <div class="card">
-        <div class="card-header" id="heading${i}">
-          <div class="row story" style="background-image: url('assets/wedding/${data[i].id}/cover.jpg'); background-blend-mode: saturation; background-size: cover; ">
+      <div class="card" style="position: relative; border: 1px black solid;">
+        <div class="card-header" style="padding: 0" id="heading${i}">
+          <div style="position:absolute; top: 0; width: 100%; height: 100%; z-index: 1; ">
+            <img style="width: 100%; height: 100%; filter: blur(6px);" src="assets/wedding/${data[i].id}/cover.jpg" />
+          </div>
+          <div class="row story" style="position: relative; z-index: 2">
             <div class="story-cover col-12">
-              <div class="story-cover-text ${data[i].coverText}">
+              <div class="shadow story-cover-text ${data[i].coverText}">
                 ${data[i].name}
               </div>
             </div>
             <div class="col-9 story-title"></div>
-            <div class="col-3 story-date">
+            <div class="col-3 story-date shadow">
               ${data[i].date}
             </div>
             <div class="col-12 story-text">
               ${data[i].statement}
             </div>
           </div>
-          <h2 class="mb-0 text-center">
+          <h2 class="mb-0 text-center" style="position: relative; z-index: 2">
             <button
               class="btn btn-outline-dark"
               onclick="changeModalContent('${data[i].id}')"
@@ -124,6 +127,7 @@ function renderPortfolio() {
           class="collapse"
           aria-labelledby="heading${i}"
           data-parent="#stories-accordion"
+          style="position: relative; z-index: 2"
         >
           <div class="card-body text-center">
             <img class="collage" id="collage-${i}" src="assets/wedding/${data[i].id}/collage.JPG" />
